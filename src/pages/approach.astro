@@ -1,0 +1,93 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'Approach — Jordan Armstrong',
+  description:
+    'A pragmatic, test-first UX approach: frame the bet, prototype to learn, govern for speed, and hand off tightly.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    actions={[
+      { variant: 'primary', text: 'See it in practice', href: '/examples', icon: 'tabler:arrow-right' },
+      { variant: 'secondary', text: 'Contact', href: '/contact' },
+    ]}
+    tagline="Approach"
+  >
+    <Fragment slot="title">A pragmatic, test-first UX approach</Fragment>
+    <Fragment slot="subtitle">
+      Fast loops, strong handoffs, measurable outcomes. I design inside constraints so teams ship confidently.
+    </Fragment>
+  </Hero>
+
+  <!-- The loop -->
+  <section class="mx-auto max-w-5xl px-6 sm:px-8 py-10 sm:py-14">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">The loop</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-4">
+      <div class="rounded-2xl bg-white/95 dark:bg-[rgb(34_36_39)] border border-slate-200/80 dark:border-[rgb(80_86_96)] p-5">
+        <h3 class="font-semibold">1. Frame the bet</h3>
+        <p class="mt-1 text-sm text-slate-600 dark:text-[rgb(190_198_210)]">Clarify the decision & risk. Convert goals into testable questions and AC.</p>
+      </div>
+      <div class="rounded-2xl bg-white/95 dark:bg-[rgb(34_36_39)] border border-slate-200/80 dark:border-[rgb(80_86_96)] p-5">
+        <h3 class="font-semibold">2. Prototype to learn</h3>
+        <p class="mt-1 text-sm text-slate-600 dark:text-[rgb(190_198_210)]">Prove the hardest thing first. Clickable flows over pixel-perfect debates.</p>
+      </div>
+      <div class="rounded-2xl bg-white/95 dark:bg-[rgb(34_36_39)] border border-slate-200/80 dark:border-[rgb(80_86_96)] p-5">
+        <h3 class="font-semibold">3. Govern for speed</h3>
+        <p class="mt-1 text-sm text-slate-600 dark:text-[rgb(190_198_210)]">Reuse tokens/components; document just enough. Ship patterns, not one-offs.</p>
+      </div>
+      <div class="rounded-2xl bg-white/95 dark:bg-[rgb(34_36_39)] border border-slate-200/80 dark:border-[rgb(80_86_96)] p-5">
+        <h3 class="font-semibold">4. Tight handoff</h3>
+        <p class="mt-1 text-sm text-slate-600 dark:text-[rgb(190_198_210)]">Specs, edge cases, traceability UI ↔ API ↔ data. Pair with dev; verify in staging.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section class="mx-auto max-w-5xl px-6 sm:px-8 py-6 sm:py-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">Principles I won’t compromise on</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl bg-white/95 dark:bg-[rgb(34_36_39)] border border-slate-200/80 dark:border-[rgb(80_86_96)] p-6">
+        <h3 class="font-semibold">Evidence over opinions</h3>
+        <p class="mt-2 text-slate-600 dark:text-[rgb(190_198_210)]">Quick usability checks beat long meetings. Show, don’t argue.</p>
+      </div>
+      <div class="rounded-2xl bg-white/95 dark:bg-[rgb(34_36_39)] border border-slate-200/80 dark:border-[rgb(80_86_96)] p-6">
+        <h3 class="font-semibold">Design inside constraints</h3>
+        <p class="mt-2 text-slate-600 dark:text-[rgb(190_198_210)]">Security, accessibility, and legacy systems are part of the canvas, not blockers.</p>
+      </div>
+      <div class="rounded-2xl bg-white/95 dark:bg-[rgb(34_36_39)] border border-slate-200/80 dark:border-[rgb(80_86_96)] p-6">
+        <h3 class="font-semibold">Modularity wins</h3>
+        <p class="mt-2 text-slate-600 dark:text-[rgb(190_198_210)]">Small, testable parts let changes cascade safely across the product.</p>
+      </div>
+      <div class="rounded-2xl bg-white/95 dark:bg-[rgb(34_36_39)] border border-slate-200/80 dark:border-[rgb(80_86_96)] p-6">
+        <h3 class="font-semibold">Clarity scales</h3>
+        <p class="mt-2 text-slate-600 dark:text-[rgb(190_198_210)]">Crisp AC, states, and definitions of done save weeks later.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tooling chips -->
+  <section class="mx-auto max-w-5xl px-6 sm:px-8 py-6 sm:py-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">Tooling & stack fluency</h2>
+    <div class="mt-4 flex flex-wrap gap-2">
+      {['Figma', 'FigJam', 'Design tokens', 'Design systems', 'Angular/Material', 'API literacy', 'Jira/AC discipline', 'Lightweight usability tests'].map((t) => (
+        <span class="rounded-full px-3 py-1 text-sm border border-slate-300 dark:border-[rgb(110_118_129)] bg-white/70 dark:bg-[rgb(34_36_39)] text-default">{t}</span>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mx-auto max-w-5xl px-6 sm:px-8 py-10 sm:py-16">
+    <div class="rounded-3xl border border-slate-200/70 dark:border-[rgb(80_86_96)] p-8 sm:p-10 text-center bg-white/95 dark:bg-[rgb(34_36_39)]">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">Ready to see outcomes?</h2>
+      <p class="mt-3 text-slate-600 dark:text-[rgb(190_198_210)]">Browse short case studies with artifacts and outcomes.</p>
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <a href="/examples" class="inline-flex items-center justify-center rounded-2xl bg-primary text-white px-5 py-2.5 font-medium hover:bg-[var(--aw-color-primary-soft)] transition">See examples</a>
+        <a href="/contact" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 dark:border-[rgb(110_118_129)] text-default px-5 py-2.5 font-medium hover:bg-[rgb(66_140_189/0.06)] dark:hover:bg-[rgb(66_140_189/0.18)] transition">Contact</a>
+      </div>
+    </div>
+  </section>
+</Layout>
