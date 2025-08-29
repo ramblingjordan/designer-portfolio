@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import avatar from '~/assets/images/avatar.jpg';
+import headshot from '~/assets/images/headshot.jpg';
 
 const metadata = {
   title: 'About — Jordan Armstrong',
@@ -17,7 +18,7 @@ const metadata = {
       { variant: 'primary', text: 'See examples', href: '/examples', icon: 'tabler:arrow-right' },
       { variant: 'secondary', text: 'Contact', href: '/contact' },
     ]}
-    image={{ src: avatar, alt: 'Jordan Armstrong', width: 1024, height: 768 }}
+    image={{ src: headshot, alt: 'Jordan Armstrong', width: 1024, height: 768 }}
     tagline="About me"
   >
     <Fragment slot="title">
