@@ -1,31 +1,31 @@
 site:
-  name: AstroWind
+  name: Jordan Armstrong
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: false
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Jordan Armstrong
+    template: '%s — Jordan Armstrong'
+  description: "Experience Designer | Design Systems Advocate | Technologist"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: JordanArmstrong
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
-  twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
-    cardType: summary_large_image
+  # twitter:
+  #   handle: '@arthelokyo'
+  #   site: '@arthelokyo'
+  #   cardType: summary_large_image
 
 i18n:
   language: en
@@ -33,11 +33,11 @@ i18n:
 
 apps:
   blog:
-    isEnabled: true
+    isEnabled: false
     postsPerPage: 6
 
     post:
-      isEnabled: true
+      isEnabled: false
       permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       robots:
         index: true
@@ -60,7 +60,7 @@ apps:
       robots:
         index: false
 
-    isRelatedPostsEnabled: true
+    isRelatedPostsEnabled: false
     relatedPostsCount: 4
 
 analytics:
