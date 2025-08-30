@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import listening from '~/assets/images/listening.webp'
+import beach from '~/assets/images/beach.jpg';
 
 const metadata = {
   title: 'Contact — Jordan Armstrong',
@@ -12,7 +12,7 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero -->
-  <Hero tagline="Contact" image={{ src: listening, alt: 'Jordan Armstrong', width: 900, height: 473 }}>
+  <Hero tagline="Contact" image={{ src: beach, alt: 'Jordan Armstrong', width: 900, height: 473 }}>
     <Fragment slot="title">Let’s connect</Fragment>
     <Fragment slot="subtitle">
       I’m open to conversations about roles, projects, and collaboration.  
