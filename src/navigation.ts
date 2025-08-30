@@ -19,7 +19,7 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
-  actions: [{ text: 'Work with me', href: getPermaLink('/contact')}],
+  actions: [{ text: 'Work with me', href: getPermalink('/contact')}],
 };
 
 export const footerData = {
